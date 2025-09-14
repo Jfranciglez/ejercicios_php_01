@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-area: 1/1/2/12;
+    background-color: rgb(131, 191, 244);
+    text-align: center;
+  
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+/*div {
+    grid-column: 12;
+    grid-row: 1;
+    border-radius: 100%;
+    width: 5px;
+    height: 2px;
+    
+
+}*/
+a {
+    text-decoration: none;
+
+}
+footer{
+    text-align: center;
+   
+    padding: 30px;
+    background-color: rgb(131, 191, 244);
+}
