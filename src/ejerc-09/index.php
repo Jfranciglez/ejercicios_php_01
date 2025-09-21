@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    
     <form action="index.php" method="post">
         <label for="numero">Escriba un número</label>
         <input type="number" name="numero">
@@ -25,7 +27,7 @@
      <table>
         <thead>
         <tr>
-        <th><?=" tabla del $numero"?></th>
+        <th><?=" $numero"?></th>
         <th><?="$numero * $i"?></th>
         </tr>
         </thead>
@@ -39,5 +41,7 @@
         }
      } 
     ?>
+    
+    
 </body>
 </html>

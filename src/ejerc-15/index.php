@@ -9,6 +9,8 @@
 </head>
 
 <body>
+   
+    
     <table>
         <thead>
             <tr class="fondo">
@@ -132,22 +134,45 @@
         <input type="submit" value="Aceptar">
     </form>
 
-<?php
-if (isset($_POST['coordenadas'])){ 
+    <?php
+    if (isset($_POST['coordenadas'])) {
         $coordenadas = $_POST['coordenadas'];
-        $alfil = str_split( $coordenadas);
+        $alfil = str_split($coordenadas);
 
-        $columna = $coordenadas[0];
-        $fila = $coordenadas[1];
-   echo " $columna, $fila ";
+        $x = $coordenadas[0];
+        $y = $coordenadas[1];
 
-   for($fila = 8; $fila > 0; $fila--){
-    echo "<tr> <td>$fila</td></tr>";
-   }
 
-}
-?>
+        
+        for ($fila = 8; $fila > 0; $fila--) {
+            echo "<tr> <td>$fila</td></tr>";
+            for ($columna = 1; $columna < 9; $columna++) {
+                $alterna = (($fila + $columna) % 2 == 0) ? "black" : "white";
+                echo " <td class='$alterna'></td>";
 
+                if ($x == $columna && $y == $fila) {
+                    $extra = "alfil";
+                    echo "<td class='$alterna $extra'>♗</td>";
+
+                } elseif (abs($columna - $x) == abs($fila - $y)) {
+                    $extra = "mov";
+                    echo "<td class='$alterna $extra'></td>";
+                } else {
+                    echo "<td class='$alterna'></td>";
+                }
+            }
+
+            echo "</tr>";
+
+
+        }
+
+    }
+
+
+    ?>
+    
+    
 </body>
 
 </html>

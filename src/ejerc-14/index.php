@@ -6,8 +6,9 @@
     <title>arrays-asociativos</title>
 </head>
 <body>
-
-<h2>Este programa escoge 10 cartas de la baraja española y las suma según el juego de "la brisca". </h2>
+  
+    
+   <h2>Este programa escoge 10 cartas de la baraja española y las suma según el juego de "la brisca". </h2>
 
 <form action="index.php" method="post">
 <input type="submit" name="Comenzar" value="Comenzar"> 
@@ -61,6 +62,8 @@
     ?>
     <br> <br>
      <a href="index.php"><button>Volver al inicio</button></a>
+
+     
 
 </body>
 </html>

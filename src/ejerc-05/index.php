@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejerc-05</title>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+  
     <form action="index.php" method="post">
         <label for="horas">Escriba las horas trabajadas</label>
         <input type="number" name="horas">
@@ -32,5 +34,6 @@
        }
      }
      ?>
+     
 </body>
 </html>

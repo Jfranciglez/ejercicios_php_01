@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    
     <form action="index.php" method="post">
         <label for="numbers">Escriba tres números diferentes</label>
         <input type="number" name="num-first">
@@ -44,7 +45,6 @@
         
     
     ?>
-
 
 
 </body>

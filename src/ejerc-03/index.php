@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejerc-03</title>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+   
     <form action="index.php" method="post">
         <label for="altura">Escriba la altura</label>
         <input type="number" name="altura">
@@ -33,5 +35,6 @@
          <br> <br>
      <a href="index.php"><button>Volver al inicio</button></a>
      <a href="index.html"><button>Página Principal</button></a>
+   
 </body>
 </html>
